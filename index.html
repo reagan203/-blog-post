@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Blog Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Stylish Blog Platform</h1>
+
+    <!-- Form to Add Blog Post -->
+    <div class="add-post">
+      <h2>Add a New Post</h2>
+      <input type="text" id="title" placeholder="Blog Title">
+      <textarea id="content" placeholder="Blog Content"></textarea>
+      <button id="add-post-btn" class="btn">Add Post</button>
+    </div>
+
+    <!-- Section to Display Blog Posts -->
+    <div class="posts" id="posts">
+      <h2>All Blog Posts</h2>
+      <!-- Blog posts will be injected here dynamically -->
+    </div>
+  </div>
+
+  <!-- Edit Post Modal -->
+  <div class="modal" id="editModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Edit Post</h2>
+      <input type="text" id="editTitle" placeholder="Blog Title">
+      <textarea id="editContent" placeholder="Blog Content"></textarea>
+      <button id="save-edit-btn" class="btn">Save Changes</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
